@@ -1,0 +1,170 @@
+.hero .container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.hero{
+    background-color: #f5f5f5;
+    padding: 30px 0;
+}
+.regs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+    margin-top: 12px;
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reg-btn {
+    width: 89px;
+    height: 36px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 3px;
+}
+
+#p1,
+#p2 {
+    margin: 0;
+    padding: 0;
+}
+
+#p1 {
+    line-height: 62px;
+    font-size: 55px;
+}
+
+#p2 {
+    line-height: 20.7px;
+    font-size: 17px;
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.regs img {
+    width: 372px;
+    height: 383px;
+}
+
+.dots-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dot.active {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50;
+    border-radius: 50%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #d1e7d1;
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    .regs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .reg {
+        align-items: center;
+    }
+
+    .p {
+        align-items: center;
+    }
+
+    #p1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    #p2 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .regs img {
+        width: 100%;
+        max-width: 372px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .regs {
+        gap: 24px;
+        margin-top: 62px;
+    }
+
+    #p1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    #p2 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .reg-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .regs img {
+        max-width: 280px;
+    }
+
+    .dots-container {
+        margin-top: 20px;
+        gap: 8px;
+    }
+
+    .dot,
+    .dot.active {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+/* Маленькі мобільні */
+@media (max-width: 400px) {
+    #p1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    #p2 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .regs img {
+        max-width: 220px;
+    }
+}

@@ -2,7 +2,7 @@ import './AuthForms.css'
 import { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/auth';
+const API_URL = 'https://react-project-lect.onrender.com/api/auth';
 
 export function LoginForm({ onClose, onSwitchToSignUp, onSuccess }) {
     const [email, setEmail] = useState('');

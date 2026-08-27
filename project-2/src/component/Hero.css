@@ -16,13 +16,12 @@
     gap: 72px;
     margin-top: 12px;
 }
-/* Контейнер, який приховує все, що не в міститься в екрані */
-/* Перенесення рядків через \n */
+
 #p1 {
     white-space: pre-line;
 }
 
-/* Обгортка та анімація слайдера */
+
 .hero-slider-wrapper {
     overflow: hidden;
     width: 100%;
@@ -39,15 +38,15 @@
     box-sizing: border-box;
 }
 
-/* Стилі для сітки всередині слайда, щоб вона не ламалася */
+
 .hero-slide .regs {
     width: 100%;
-    display: flex; /* Якщо у тебе тут flex або grid, збережи свої початкові стилі для .regs */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
 }
 
-/* Стилі для крапок і курсору */
+
 .dots-container {
     display: flex;
     justify-content: center;
@@ -65,7 +64,7 @@
 }
 
 .dot.active {
-    background-color: #4CAF50; /* або твій зелений колір */
+    background-color: #4CAF50; 
 }
 .regs {
     overflow: hidden;

@@ -43,7 +43,7 @@ function App() {
     <>
       <div className="wrapper">
         <Header isLoggedIn={isLoggedIn}  onRegisterClick={() => setAuthMode('signup')} onLogoutClick={() => setLoggedOut(true)}/>
-        <Hero onRegisterClick={() => setAuthMode('signup')} isLoggedIn={isLoggedIn} />
+        <Hero onRegisterClick={() => setAuthMode('signup')} isLoggedIn={isLoggedIn} onLogoutClick={() => setLoggedOut(true)}/>
         <Clients />
         <Comunity />
         <Showcase1 />

@@ -142,14 +142,6 @@
     font-size: 13px;
 }
 
-.auth__divider::before,
-.auth__divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-color: #e5e7eb;
-}
-
 .auth__switch {
     text-align: center;
     font-size: 14px;
@@ -166,4 +158,83 @@
 
 .auth__switch-link:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+.logout-modal {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logout-modal__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background-color: #fef2f2;
+    border-radius: 50%;
+}
+
+.logout-modal__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.logout-modal__subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.logout-modal__actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.logout-modal__cancel {
+    flex: 1;
+    height: 44px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-modal__cancel:hover {
+    background-color: #e5e7eb;
+}
+
+.logout-modal__confirm {
+    flex: 1;
+    height: 44px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-modal__confirm:hover {
+    background-color: #b91c1c;
 }

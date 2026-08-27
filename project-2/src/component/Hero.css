@@ -16,7 +16,61 @@
     gap: 72px;
     margin-top: 12px;
 }
+/* Контейнер, який приховує все, що не в міститься в екрані */
+/* Перенесення рядків через \n */
+#p1 {
+    white-space: pre-line;
+}
 
+/* Обгортка та анімація слайдера */
+.hero-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.hero-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.hero-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Стилі для сітки всередині слайда, щоб вона не ламалася */
+.hero-slide .regs {
+    width: 100%;
+    display: flex; /* Якщо у тебе тут flex або grid, збережи свої початкові стилі для .regs */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стилі для крапок і курсору */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #4CAF50; /* або твій зелений колір */
+}
+.regs {
+    overflow: hidden;
+    width: 100%;
+}
 .reg {
     display: flex;
     flex-direction: column;
@@ -43,6 +97,7 @@
 #p1 {
     line-height: 62px;
     font-size: 55px;
+    white-space: pre-line;
 }
 
 #p2 {
@@ -73,6 +128,7 @@
     height: 12px;
     background-color: #4caf50;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .dot {
@@ -80,7 +136,9 @@
     height: 12px;
     background-color: #d1e7d1;
     border-radius: 50%;
+    cursor: pointer;
 }
+
 
 @media (max-width: 900px) {
     .regs {

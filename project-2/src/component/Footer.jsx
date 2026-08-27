@@ -13,10 +13,10 @@ export function Footer() {
                             Copyright © 2020 Landify UI Kit. <br /> All rights reserved.
                         </p>
                         <div className="footer__socials">
-                            <a href="#"><img src="/icon-instagram.svg" alt="" /></a>
-                            <a href="#"><img src="/icon-dribbble.svg" alt="" /></a>
-                            <a href="#"><img src="/icon-twitter.svg" alt="" /></a>
-                            <a href="#"><img src="/icon-youtube.svg" alt="" /></a>
+                            <a href="#"><img src="/Social Icons.png" alt="" /></a>
+                            <a href="#"><img src="/Social Icons 2.png" alt="" /></a>
+                            <a href="#"><img src="/Social Icons 3.png" alt="" /></a>
+                            <a href="#"><img src="/Social Icons 4.png" alt="" /></a>
                         </div>
                     </div>
 

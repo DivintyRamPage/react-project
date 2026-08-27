@@ -50,6 +50,12 @@
     align-items: center;
     justify-content: center;
     color: white;
+    cursor: pointer;
+}
+.header-user-btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(0, 78, 0);
 }
 
 .burger {

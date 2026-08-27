@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 
 
-export function Header() {
+export function Header({ isLoggedIn, onRegisterClick, onLogoutClick }) {
     const [menuOpen, setMenuOpen] = useState(false)
 
     function toggleMenu(event) {
@@ -36,9 +36,9 @@ export function Header() {
     return (
         <>
             <header className="header">
-                <a 
-                className={`burger${menuOpen ? ' active' : ''}`}
-                onClick={toggleMenu}
+                <a
+                    className={`burger${menuOpen ? ' active' : ''}`}
+                    onClick={toggleMenu}
                 >
                     <span></span>
                     <span></span>
@@ -85,7 +85,11 @@ export function Header() {
                                 </ul>
                             </nav>
                             <div className="header-user-nav">
-                                <div className="header-user-btn button">Register Now </div>
+                                {isLoggedIn ? (
+                                    <div className="header-user-btn button" onClick={onLogoutClick}>Log out</div>
+                                ) : (
+                                <div className="header-user-btn button" onClick={onRegisterClick}>Register now</div>
+                            )}
                             </div>
                         </div>
                     </div>
